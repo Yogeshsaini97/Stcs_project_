@@ -8,7 +8,7 @@ export async function fetchData(url) {
         method: 'GET'
         ,
         headers: {
-          Authorization: 'Bearer ' + "eyJ0eXAiOiJhdCtqd3QiLCJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJiNmNiOTE4ZmE5ZmZhMjFjYTc2NzM3YTY2ZDE3YTk5ZTUzOTkzM2YxOTM1YTdlOWJhZWNmZGE2Y2NmOGYzIiwiY2xpZW50X2lkIjoiaWQtM2U0ZWM3ZWQtNGI1Zi0zOGJmLWU0NzAtYTUxMDhiYzM1ZGMwIiwiaWF0IjoxNjg5ODM2NTk3LCJleHAiOjE2ODk4MzcxOTcsInN1YiI6IjIwMTI0IiwidXNlcm5hbWUiOiJ0ZXN0IiwiaXNzIjoibG9jYWxob3N0Iiwic2NvcGUiOiJDX1NjaGVkdWxlLmV2ZXJ5dGhpbmcucmVhZCBDX1Byb2plY3R0LmV2ZXJ5dGhpbmcud3JpdGUgQ19SaXNrc2FuZElzc3VlLmV2ZXJ5dGhpbmcucmVhZCBDX1Jpc2tzYW5kSXNzdWUuZXZlcnl0aGluZyBDX1Jpc2tzYW5kSXNzdWUuZXZlcnl0aGluZy53cml0ZSBDX1NjaGVkdWxlLmV2ZXJ5dGhpbmcgQ19Qcm9qZWN0dC5ldmVyeXRoaW5nLnJlYWQgQ19TY2hlZHVsZS5ldmVyeXRoaW5nLndyaXRlIENfUHJvamVjdHQuZXZlcnl0aGluZyIsImdyYW50X3R5cGUiOiJjbGllbnRfY3JlZGVudGlhbHMifQ.HYnqfKCnDvkol8BDxu-T08Q3TDmg6xiHBm9Ejal0m3aqudE_5_WzeiHgqJmkDCbN3vj7J3iWFwUKZ_5-cdbneOP4j5JJ_uIMOl8QTCHlo4F-WGMEudjEIy4AJtDvgXONcazuwAw7BOG1urbgr_7KM8GAUkHMwbcAiq7stDRASmxwwoRFZEAxdNiWpQMAH4PfQLS9cqDDtSQ8e0bXF9j2NOXtW-HiNd4WNxh0GtHnUZxZAJH82z-5dns-cyy0jrFr9Y-ULANMywSB_lgCqOEJvkqwBy0CYFz-i71fO-2RGNlYvqIlphr3UAaemZQmWz8MKDVaVd5T4vlvGhAkUuThDg",
+          Authorization: 'Bearer ' + "eyJ0eXAiOiJhdCtqd3QiLCJhbGciOiJSUzI1NiJ9.eyJqdGkiOiIxMGVhYzA4OGQwNGY4NTk3NzBlOGZjNzM5ZjM5NjA1NGFiOTI0NGI2M2E2OGUxYTgxMTViYmMzMzkxZTc0YTEiLCJjbGllbnRfaWQiOiJpZC0zZTRlYzdlZC00YjVmLTM4YmYtZTQ3MC1hNTEwOGJjMzVkYzAiLCJpYXQiOjE2ODk4NTI3OTksImV4cCI6MTY4OTg1MzM5OSwic3ViIjoiMjAxMjQiLCJ1c2VybmFtZSI6InRlc3QiLCJpc3MiOiJsb2NhbGhvc3QiLCJzY29wZSI6IkNfU2NoZWR1bGUuZXZlcnl0aGluZy5yZWFkIENfUHJvamVjdHQuZXZlcnl0aGluZy53cml0ZSBDX0RvY3VtZW50LmV2ZXJ5dGhpbmcud3JpdGUgQ19SaXNrc2FuZElzc3VlLmV2ZXJ5dGhpbmcucmVhZCBDX1Jpc2tzYW5kSXNzdWUuZXZlcnl0aGluZyBDX1Jpc2tzYW5kSXNzdWUuZXZlcnl0aGluZy53cml0ZSBDX1NjaGVkdWxlLmV2ZXJ5dGhpbmcgQ19Eb2N1bWVudC5ldmVyeXRoaW5nLnJlYWQgQ19Qcm9qZWN0dC5ldmVyeXRoaW5nLnJlYWQgQ19TY2hlZHVsZS5ldmVyeXRoaW5nLndyaXRlIENfUHJvamVjdHQuZXZlcnl0aGluZyBDX0RvY3VtZW50LmV2ZXJ5dGhpbmciLCJncmFudF90eXBlIjoiY2xpZW50X2NyZWRlbnRpYWxzIn0.PcGAMYn5rnpz0zflWjmjXURHLgHVQYSKjf9VQUQhJYhiNOwHBE376xv88GIUKH0PpB3ghL3-fsTGRTV47_FeaoGFb8sOIAtI1qQUpv1noOaz_y5IEG8eA4tzwK4_hrddL6CZEW3Ht0QjiK-sA5yzWZvIS_gbehVv9HlyBqNPf1n2i5aq0u28uFnSw7QfnmAmBpmWNi1IlSi3wO0v9Po65PB9uZ8Oag_eor4gy5wAlWhnUaH-_PHcCy10QKjXXFU_YVCI5JkGTd4JGJt1c3matJpjR0OvBpLHM9N6ubfCdLEDUgUALByPXtu-l25N3BXQ6MAMyUZKMtGvNDOj8sX8VQ",
           'Content-Type': 'application/json'
         }
       })
@@ -31,7 +31,36 @@ export  function ChangeDateFormat(date)
 }
 
 
+export function formatTimeTo12HourFormat(dateString) {
+  const date = new Date(dateString);
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
 
+  const amOrPm = hours >= 12 ? "PM" : "AM";
+  const formattedHours = hours % 12 || 12;
+  const formattedMinutes = minutes.toString().padStart(2, "0");
+
+  const formattedTime = `${formattedHours}:${formattedMinutes} ${amOrPm}`;
+  return formattedTime;
+}
+
+
+export function GiveDayandmonthseperate(inputDate) {
+  // Convert the input date string to a Date object
+  const dateObj = new Date(inputDate);
+
+  // Get the day of the month in the format "dd"
+  const day = String(dateObj.getDate()).padStart(2, '0');
+
+  // Get the month abbreviation (e.g., "Jul") and the year in 2-digit format (e.g., "'23")
+  const monthAbbreviation = new Intl.DateTimeFormat('en', { month: 'short' }).format(dateObj);
+  const yearTwoDigits = new Intl.DateTimeFormat('en', { year: '2-digit' }).format(dateObj);
+
+  // Construct the formatted date string
+  const formattedDate = `${monthAbbreviation} '${yearTwoDigits}`;
+
+  return {day, formattedDate};
+}
 
 
 

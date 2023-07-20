@@ -6,6 +6,7 @@ import Overview from "./Overview.vue"
 import { fetchData } from '../../Utils/Utils';
 import RiskIssues from './Risk&Issues.vue';
 import Schedule from './Schedule.vue';
+import ProjectDocuments from './ProjectDocuments.ce.vue';
 
 
 const ProjectApiId = inject('ProjectApiId');
@@ -101,7 +102,10 @@ provide("no_of_Risks", no_of_Risks);
       </div>
     </Tab>
     <Tab title="Documents">
-      Aenean varius dui eget ante finibus, sit amet finibus nisi facilisis. Nunc pellentesque, risus et pretium hendrerit.
+      <div v-if="ProjectGetOneData">
+        <ProjectDocuments/>
+      </div>
+     
     </Tab>
     <Tab title="Approvals">
       Aenean varius dui eget ante finibus, sit amet finibus nisi facilisis. Nunc pellentesque, risus et pretium hendrerit.

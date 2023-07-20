@@ -51,17 +51,17 @@ provide('ChangePage', ChangePage);
 
 @font-face {
   font-family:"STC Forward";
-    src: url("../fonts/STC.eot");
+    src: url("../../assets/fonts/STC.eot");
     /* IE9*/
-    src: url("../fonts/STC.eot?#iefix") format("embedded-opentype"),
+    src: url("../../assets/fonts/STC.eot?#iefix") format("embedded-opentype"),
       /* IE6-IE8 */
-      url("../fonts/STC.woff2") format("woff2"),
+      url("../../assets/fonts/STC.woff2") format("woff2"),
       /* chrome firefox */
-      url("../fonts/STC.woff") format("woff"),
+      url("../../assets/fonts/STC.woff") format("woff"),
       /* chrome firefox */
-      url("../fonts/STC.ttf") format("truetype"),
+      url("../../assets/fonts/STC.ttf") format("truetype"),
       /* chrome firefox opera Safari, Android, iOS 4.2+*/
-      url("../fonts/STC.svg#STC Forward") format("svg");
+      url("../../assets/fonts/STC.svg#STC Forward") format("svg");
     /* iOS 4.1- */
   }
   
@@ -3464,7 +3464,7 @@ provide('ChangePage', ChangePage);
   }
   
   .mt-250 {
-    margin-top: 250px !important;
+    margin-top: 339px !important;
   }
   
   .mb-0 {
@@ -16198,10 +16198,7 @@ provide('ChangePage', ChangePage);
   {
       min-height:30rem;
   }
-  .List-head
-  {
-      margin:2rem;
-  }
+  
   .table-container {
       width: 100%;
       overflow-x: auto;

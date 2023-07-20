@@ -8,7 +8,11 @@ import HeaderList from "./HeaderList.ce.vue";
 import ProjectListTable from "../Views/ProjectListTable.ce.vue";
 
 import RiskIssuesListTable from "../Views/RiskIssuesListTable.ce.vue";
+import ScheduleListTable from "../Views/ScheduleListTable.ce.vue";
+import ProjectDocumentsListTable from "../Views/ProjectDocumentsListTable.ce.vue";
 export default {
+
+
   props: {
     keyName: {
       type: Object,
@@ -42,14 +46,16 @@ export default {
     const currentPage = ref(1);
     const hostUrl = props.url;
     const keyName = props.keyName;
+    const openprojectList = hostUrl.split("/").includes("projectts");
     const openRiskList = hostUrl.split("/").includes("risksandissues");
-
+    const openScheduleList = hostUrl.split("/").includes("schedules");
+    const openDocumentList = hostUrl.split("/").includes("documents");
     const breadcrumbs = inject('breadcrumbs');
     const ChangePage = inject("ChangePage");
     const ProjectApiId = inject("ProjectApiId");
 
 
-
+    console.log(hostUrl)
 
 
 
@@ -167,10 +173,13 @@ export default {
       ProjectApiId,
       openRiskList,
       HeaderList,
-      breadcrumbs
+      breadcrumbs,
+      openprojectList,
+      openScheduleList,
+      openDocumentList
     };
   },
-  components: { HeaderList, ProjectListTable, RiskIssuesListTable }
+  components: { HeaderList, ProjectListTable, RiskIssuesListTable, ScheduleListTable, ProjectDocumentsListTable }
 };
 </script>
 
@@ -190,14 +199,26 @@ export default {
                 <!-- --------- table for  project list-  -->
                 <div v-if="userList.length > 0">
 
-                  <div v-if="!openRiskList">
+                  <div v-if="openprojectList">
                     <ProjectListTable />
 
                   </div>
 
                   <div v-if="openRiskList">
                     <RiskIssuesListTable />
-                    <!-- <div>hello cehcek</div> -->
+
+
+                  </div>
+
+                  <div v-if="openScheduleList">
+                    <ScheduleListTable />
+
+
+                  </div>
+                  <div v-if="openDocumentList">
+                    <ProjectDocumentsListTable />
+
+
 
                   </div>
 
@@ -206,7 +227,6 @@ export default {
 
                 </div>
                 <div v-else>
-
                   Uh! oh Data is empty, Click here to start entering your first field :D
                   <button> Add Project</button>
 
