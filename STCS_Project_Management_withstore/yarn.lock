@@ -359,6 +359,11 @@
     "@vue/compiler-dom" "3.3.4"
     "@vue/shared" "3.3.4"
 
+"@vue/devtools-api@^6.0.0-beta.11":
+  version "6.5.0"
+  resolved "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.5.0.tgz"
+  integrity sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==
+
 "@vue/reactivity-transform@3.3.4":
   version "3.3.4"
   resolved "https://registry.npmjs.org/@vue/reactivity-transform/-/reactivity-transform-3.3.4.tgz"
@@ -836,15 +841,16 @@ source-map@^0.5.7:
   resolved "https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz"
   integrity sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ==
 
-"stcs-project@file:C:\\GithhubstcsDevelopment\\GIThubStcs\\Stcs_Project\\STCS_Project_Management\\STCS_Vue_main\\stcs-project":
+"stcs-project@file:C:\\Stcs_project_\\STCS_Project_Management_withstore\\STCS_Vue_main\\stcs-project":
   version "0.0.0"
   resolved "file:STCS_Vue_main/stcs-project"
   dependencies:
     "@emotion/react" "^11.11.1"
     "@emotion/styled" "^11.11.0"
-    "@fortawesome/fontawesome-free" "^6.4.0"
+    "@fortawesome/fontawesome-free" "^6.2.0"
     "@mui/material" "^5.13.6"
     axios "^1.4.0"
+    bootstrap "^4.6.2"
     vue "^3.3.4"
     vue-custom-element "^3.3.0"
     vue-pagination-2 "^3.1.0"
@@ -897,7 +903,7 @@ vue-pagination-2@^3.1.0:
     vue ">=2.0.0"
     vuex "^2.0.0"
 
-vue@^3.2.25, vue@^3.3.4, vue@>=2.0.0, vue@3.3.4:
+vue@^3.2.0, vue@^3.2.25, vue@^3.3.4, vue@>=2.0.0, vue@3.3.4:
   version "3.3.4"
   resolved "https://registry.npmjs.org/vue/-/vue-3.3.4.tgz"
   integrity sha512-VTyEYn3yvIeY1Py0WaYGZsXnz3y5UnGi62GjVEqvEGPl6nxbOrCXbVOTQWBEJUqAyTUk2uJ5JLVnYJ6ZzGbrSw==
@@ -912,6 +918,13 @@ vuex@^2.0.0:
   version "2.5.0"
   resolved "https://registry.npmjs.org/vuex/-/vuex-2.5.0.tgz"
   integrity sha512-5oJPOJySBgSgSzoeO+gZB/BbN/XsapgIF6tz34UwJqnGZMQurzIO3B4KIBf862gfc9ya+oduY5sSkq+5/oOilQ==
+
+vuex@^4.0.2:
+  version "4.1.0"
+  resolved "https://registry.npmjs.org/vuex/-/vuex-4.1.0.tgz"
+  integrity sha512-hmV6UerDrPcgbSy9ORAtNXDr9M4wlNP4pEFKye4ujJF8oqgFFuxDCdOLS3eNoRTtq5O3hoBDh9Doj1bQMYHRbQ==
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.11"
 
 yaml@^1.10.0:
   version "1.10.2"
