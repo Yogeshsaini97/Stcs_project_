@@ -1,0 +1,8 @@
+{
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "STCS_Vue_main\\stcs-project"
+        ]
+    }
+}
